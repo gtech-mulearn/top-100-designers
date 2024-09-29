@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1F1F1F;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1F1F1F;
     --foreground: #ededed;
   }
 }
@@ -18,10 +18,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: url('/cursor.png'),auto;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1C1C1C;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #005AE5;
+  border-radius: 0.5rem;
+  border: 3px solid #005AE5;
 }
