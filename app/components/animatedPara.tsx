@@ -9,7 +9,6 @@ const Char = ({ char }: { char: string }) => {
 };
 
 const Word = ({ word, gap }: { word: string; gap: number }) => {
-  const gapClass = `mr-${gap}`;
   return (
     <div style={{ display: "inline-block", marginRight: `${gap}rem` }}>
       {word.split("").map((char, index) => (

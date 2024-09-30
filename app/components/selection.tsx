@@ -46,7 +46,7 @@ const Selection = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center max-md:flex-col">
+    <div className="flex justify-center items-center max-md:flex-col bg-[url('/bg/bg4.webp')] bg-cover bg-center">
       <div className="flex flex-col gap-32 items-start">
         <div>
           <h1 className="text-primary text-7xl font-gilroyBold">
@@ -61,8 +61,8 @@ const Selection = () => {
           </div>
         </div>
         <div className="flex max-sm:hidden">
-          {cardData.map((data) => (
-            <Card title={data.title} description={data.description} />
+          {cardData.map((data, i) => (
+            <Card title={data.title} key={i} description={data.description} />
           ))}
         </div>
       </div>

@@ -6,7 +6,7 @@ const Hero = () => {
   const intro =
     "Our mission is to bring together the top 100 designers in the country and drive a design movement from within. We aim to support talented individuals by offering a platform where they can take on challenges,refine their skills, and excel in their craft.";
   return (
-    <div className="flex justify-end items-center max-md:flex-col">
+    <div className="flex justify-end items-center max-md:flex-col bg-[url('/bg/bg2.webp')] bg-cover bg-center">
       <div className="flex flex-col gap-8 pl-12">
         <h1 className="text-primary text-7xl font-gilroyBold">
           <AnimatedPara gap={1} words={"The future of design awaits you!"} />

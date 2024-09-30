@@ -4,7 +4,7 @@ import AnimatedPara from "./animatedPara";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center max-md:flex-col">
+    <div className="flex justify-center items-center max-md:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center">
       <Image
         className=""
         src={"/image2.png"}
