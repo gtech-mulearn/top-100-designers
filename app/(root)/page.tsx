@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Landing from "../components/landing";
 import About from "../components/about";
 import Selection from "../components/selection";
-
+import Faq from "../components/fqa";
 const page = () => {
   return (
     <div>
@@ -11,6 +11,7 @@ const page = () => {
       <Hero />
       <About />
       <Selection />
+      <Faq />
     </div>
   );
 };

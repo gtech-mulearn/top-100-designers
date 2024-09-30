@@ -6,12 +6,14 @@ import Frame from "./frame";
 const Card = ({
   title,
   description,
+  frameColor = "white",
 }: {
   title: string;
   description: string;
+  frameColor?: string;
 }) => {
   return (
-    <Frame>
+    <Frame color={frameColor}>
       <div
         style={{
           backgroundImage: "url('/filter.png')",
@@ -44,7 +46,7 @@ const Selection = () => {
     },
   ];
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center max-md:flex-col">
       <div className="flex flex-col gap-32 items-start">
         <div>
           <h1 className="text-primary text-7xl font-gilroyBold">
@@ -58,7 +60,7 @@ const Selection = () => {
             />
           </div>
         </div>
-        <div className="flex">
+        <div className="flex max-sm:hidden">
           {cardData.map((data) => (
             <Card title={data.title} description={data.description} />
           ))}
