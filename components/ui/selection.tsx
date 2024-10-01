@@ -35,9 +35,9 @@ const Card = ({
             height: "400px",
             // scale: scale,
           }}
-          className="flex flex-col pr-2 max-w-[350px] justify-start items-center p-8 text-center"
+          className="flex flex-col pr-2 md:max-w-[350px] justify-start items-center p-8 text-center"
         >
-          <h1 className="text-primary text-5xl font-gilroyBold pb-8">
+          <h1 className="text-primaryText md:text-5xl text-3xl font-gilroyBold pb-8">
             <span className={`${active && "font-gilroyMedium"}`}>
               {splitTitle[0]}
             </span>{" "}
@@ -46,7 +46,7 @@ const Card = ({
               {splitTitle[1]}
             </span>
           </h1>
-          <div className="text-xl font-gilroyMedium leading-tight">
+          <div className="md:text-xl font-gilroyMedium leading-tight text-white">
             {description}
           </div>
         </div>
@@ -79,10 +79,10 @@ const Selection = () => {
     <div className="flex justify-between items-center max-md:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center">
       <div className="flex flex-col gap-32 flex-1 justify-center items-center">
         <div>
-          <h1 className="text-primary text-7xl font-gilroyBold">
+          <h1 className="text-primaryText md:text-7xl text-5xl font-gilroyBold">
             <AnimatedPara gap={1} words={"Criteria for Selection"} />
           </h1>
-          <div className="text-xl  font-gilroyMedium text-center">
+          <div className="md:text-xl text-base  font-gilroyMedium text-center text-white">
             <AnimatedPara
               words={
                 "We're looking for top Designers who excel in the following areas:"
@@ -90,7 +90,7 @@ const Selection = () => {
             />
           </div>
         </div>
-        <div className="flex max-sm:hidden bg-red- relative">
+        <div className="flex max-sm:hidden relative">
           {cardData.map((data, i) => (
             <Card
               active={i == activeIndex ? true : false}
@@ -106,6 +106,7 @@ const Selection = () => {
       <Image
         src={"/image3.png"}
         alt="selection image"
+        className="max-md:hidden"
         height={500}
         width={500}
         draggable={false}

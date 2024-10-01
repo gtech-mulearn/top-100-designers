@@ -1,8 +1,8 @@
 "use client";
 import { ReactLenis } from "lenis/react";
 import React from "react";
-import Footer from "../components/footer";
-import Nav from "../components/nav";
+import Footer from "@/components/ui/footer";
+import Nav from "@/components/ui/nav";
 const Layout = ({
   children,
 }: Readonly<{
