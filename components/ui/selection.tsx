@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import AnimatedPara from "./animatedPara";
+// import AnimatedPara from "./animatedPara";
 import Frame from "./frame";
+import Paragraph from "./animatedText";
 
 const Card = ({
   title,
@@ -80,11 +81,11 @@ const Selection = () => {
       <div className="flex flex-col gap-32 flex-1 justify-center items-center">
         <div>
           <h1 className="text-primaryText md:text-7xl text-5xl font-gilroyBold">
-            <AnimatedPara gap={1} words={"Criteria for Selection"} />
+            <Paragraph paragraph={"Criteria for Selection"} />
           </h1>
           <div className="md:text-xl text-base  font-gilroyMedium text-center text-white">
-            <AnimatedPara
-              words={
+            <Paragraph
+              paragraph={
                 "We're looking for top Designers who excel in the following areas:"
               }
             />
