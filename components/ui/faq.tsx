@@ -1,16 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import AnimatedPara from "./animatedPara";
-// import { motion, AnimatePresence } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { HiMinusSm } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Paragraph from "./animatedText";
 import { LuMinus } from "react-icons/lu";
 import { LuPlus } from "react-icons/lu";
