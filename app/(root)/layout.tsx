@@ -15,7 +15,7 @@ const Layout = ({
     ScrollTrigger.refresh();
   }, []);
   return (
-    <ReactLenis root className="relative">
+    <ReactLenis root className="relative overflow-hidden">
       <Nav />
       {children}
       <Footer />

@@ -5,16 +5,16 @@ import Paragraph from "./animatedText";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center max-md:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center">
+    <div className="flex md:justify-center items-center max-xl:items-start max-xl:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center max-lg:p-5">
       <Image
-        className=""
+        className="max-lg:hidden"
         src={"/image2.png"}
         alt="aboutImage"
         height={750}
         width={750}
         draggable={false}
       ></Image>
-      <div className="flex flex-col gap-5 text-right pr-2">
+      <div className="flex flex-col gap-5 text-right pr-2 pt-24">
         <h1 className="text-primaryText md:text-7xl text-5xl font-gilroyBold pb-8">
           <Paragraph paragraph={"What is Top 100 Designers?"} />
         </h1>
@@ -25,14 +25,14 @@ const About = () => {
             }
           />
         </div>
-        <div className="text-xl  font-gilroyMedium text-white">
+        <div className="md:text-xl  font-gilroyMedium text-white">
           <Paragraph
             paragraph={
               "The event not only fosters a collaborative environment where designers can express their creative visions but also assists corporations in finding exceptional design talent. It's an opportunity for creative virtuosos to shine and for companies to connect with some of the best designers in the country."
             }
           />
         </div>
-        <div className="text-xl  font-gilroyMedium text-white">
+        <div className="md:text-xl  font-gilroyMedium text-white">
           <Paragraph
             paragraph={
               "Along with Huddle and KSUM, μLearn aims to replicate the success of the Top100 Coders event, held in partnership with OpenAI and Beckn to identify India's top coding talent, in the design and hardware field, providing a platform for designers and makers to showcase their skills and connect with industry leaders."

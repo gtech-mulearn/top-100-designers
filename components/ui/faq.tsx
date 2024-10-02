@@ -33,12 +33,12 @@ const Faq = () => {
   ];
 
   return (
-    <div className="bg-[url('/bg/bg4.webp')] bg-center bg-cover flex flex-col gap-16 md:pl-12 py-20 max-sm:p-2 max-sm:pb-20">
+    <div className="bg-[url('/bg/bg4.webp')] bg-center bg-cover flex flex-col gap-16 lg:pl-12 max-lg:p-5 pt-32">
       <h1 className="md:text-7xl text-5xl font-gilroyBold text-primaryText">
         <Paragraph paragraph={"Frequently Asked Questions"} />
       </h1>
-      <div className="flex justify-between gap-28">
-        <div className="flex flex-col gap-8 md:max-w-[40%]">
+      <div className="flex max-lg:gap-0 max-lg:flex-col-reverse justify-between 2xl:gap-28">
+        <div className="flex flex-col gap-8 xl:max-w-[40%] pb-20 max-xl:pr-4">
           {accData.map((e, i) => (
             <motion.div
               layoutId={`faq-${i}`}
@@ -105,12 +105,13 @@ const Faq = () => {
           </AccordionItem>
         </Accordion> */}
         <Image
-          className="w-1/2 max-sm:hidden"
+          className="xl:w-1/2 max-xl:hidden"
           src="/image4 copy.png"
           alt="image4"
           height={800}
           width={800}
           draggable={false}
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
     </div>
