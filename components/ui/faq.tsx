@@ -11,24 +11,17 @@ const Faq = () => {
 
   const accData = [
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur iste laudantium cum ipsam distinctio amet eaque in velit necessitatibus repellendus. Repellendus, porro molestias dicta deleniti ratione rerum? Similique, hic quo!",
+      title: "Is it beginner-friendly?",
+      description: "  Yes, it’s open to all skill levels.",
     },
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "What happens after the selection process?",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur iste laudantium cum ipsam distinctio amet eaque in velit necessitatibus repellendus. Repellendus, porro molestias dicta deleniti ratione rerum? Similique, hic quo!",
+        "Participants complete tasks, then move on to the final challenge.",
     },
     {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur iste laudantium cum ipsam distinctio amet eaque in velit necessitatibus repellendus. Repellendus, porro molestias dicta deleniti ratione rerum? Similique, hic quo!",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur iste laudantium cum ipsam distinctio amet eaque in velit necessitatibus repellendus. Repellendus, porro molestias dicta deleniti ratione rerum? Similique, hic quo!",
+      title: "How do I apply?",
+      description: "Apply through the Huddle Global website.",
     },
   ];
 

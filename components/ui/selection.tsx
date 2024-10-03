@@ -43,7 +43,7 @@ const Card = ({
           style={{
             backgroundImage: "url('/filter.png')",
           }}
-          className="flex flex-col md:pr-2 md:min-h-[400px] max-sm:min-h-[300px] max-sm:max-w-[250px] max-w-[350px] justify-start items-center md:p-8 text-center"
+          className="flex flex-col md:pr-2 md:min-h-[400px] max-sm:min-h-[300px] max-sm:max-w-[250px] max-w-[350px] justify-start items-center p-8 text-center"
         >
           <h1
             className={`text-primaryText ${
