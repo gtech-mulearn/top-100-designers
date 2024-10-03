@@ -10,19 +10,22 @@ const Landing = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[url('/bg/main_bg.webp')] bg-cover bg-center flex flex-col gap-24 justify-center items-center">
+    <div className="min-h-screen bg-[url('/landing/landing_banner.webp')] bg-cover bg-center flex flex-col gap-20 justify-center items-center">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={imageVariants}
         transition={{ duration: 0.5, delay: 0.2 }}
+        className="flex justify-center items-center w-full"
       >
         <Image
+          className="max-md:w-1/2"
           draggable={false}
-          src={"/logos.webp"}
+          src={"/landing/sponsors.webp"}
           alt="logo"
-          height={500}
-          width={500}
+          height={400}
+          width={400}
+          sizes="100vw"
         />
       </motion.div>
       <motion.div
@@ -30,13 +33,16 @@ const Landing = () => {
         animate="visible"
         variants={imageVariants}
         transition={{ duration: 0.5, delay: 0.4 }}
+        className="flex justify-center items-center w-full"
       >
         <Image
+          className="max-md:w-1/2"
           draggable={false}
-          src={"/main_logo.webp"}
+          src={"/landing/big_logo.webp"}
           alt="logo"
-          height={500}
-          width={500}
+          height={400}
+          width={400}
+          sizes="100vw"
         />
       </motion.div>
       <motion.div
@@ -44,13 +50,16 @@ const Landing = () => {
         animate="visible"
         variants={imageVariants}
         transition={{ duration: 0.5, delay: 0.6 }}
+        className="flex justify-center items-center w-full"
       >
         <Image
+          className="max-md:w-1/2"
           draggable={false}
-          src={"/content.webp"}
+          src={"/landing/landing_text.webp"}
           alt="logo"
-          height={500}
-          width={500}
+          height={400}
+          width={400}
+          sizes="100vw"
         />
       </motion.div>
     </div>

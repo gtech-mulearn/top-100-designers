@@ -118,10 +118,10 @@ const Selection = () => {
     <div className="flex justify-between items-center max-md:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center max-2xl:pt-24 max-2xl:pb-48">
       <div className="flex flex-col gap-32 ld:gap-32 flex-1 justify-center items-center">
         <div>
-          <h1 className="text-primaryText md:text-7xl text-5xl font-gilroyBold">
+          <h1 className="text-primaryText md:text-7xl text-5xl font-gilroyBold max-md:p-4">
             <Paragraph paragraph={"Criteria for Selection"} />
           </h1>
-          <div className="md:text-xl text-base  font-gilroyMedium text-center text-white">
+          <div className="md:text-xl text-base  font-gilroyMedium text-center text-white max-md:p-4">
             <Paragraph
               paragraph={
                 "We're looking for top Designers who excel in the following areas:"
