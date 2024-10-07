@@ -1,25 +1,31 @@
 "use client";
-import { ReactLenis } from "lenis/react";
+import Lenis from "lenis";
 import React, { useEffect } from "react";
 import Footer from "@/components/ui/footer";
 import Nav from "@/components/ui/nav";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Layout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.refresh();
+    const lenis = new Lenis({
+      lerp: 0.05,
+      smoothWheel: true,
+    });
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
   }, []);
   return (
-    <ReactLenis root className="relative overflow-hidden">
+    <main className="relative overflow-hidden">
       <Nav />
       {children}
       <Footer />
-    </ReactLenis>
+    </main>
   );
 };
 
