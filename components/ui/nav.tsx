@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdCancel } from "react-icons/md";
 import Frame from "./frame";
@@ -11,7 +11,7 @@ const Nav = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav className="min-h-24 sticky top-0 z-50 bg-[url('/bg/nav.webp')] bg-cover bg-center flex justify-between items-center p-4">
+    <nav className="min-h-24 fixed w-full top-0 z-50 bg-[url('/bg/nav.webp')] bg-cover bg-center flex justify-between items-center p-4">
       <div className="ml-4">
         <Frame color="white">
           <Image
@@ -28,15 +28,23 @@ const Nav = () => {
       <div>
         <ul className="flex gap-8 items-center font-gilroyMedium text-lg text-white max-md:hidden">
           <li className="hover:underline transition-all">
-            <Link href="#home">Home</Link>
+            <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+              Home
+            </ScrollLink>
           </li>
           |
           <li className="hover:underline transition-all">
-            <Link href="#about">About</Link>
+            <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
+              About
+            </ScrollLink>
           </li>
-          <Frame color="white">
-            <li className="bg-primaryBg text-xl px-4 py-1">Participate Now</li>
-          </Frame>
+          <li>
+            <Frame link={true} color="white">
+              <div className="bg-primaryBg text-xl px-4 py-1">
+                Participate Now
+              </div>
+            </Frame>
+          </li>
         </ul>
         <RxHamburgerMenu
           onClick={() => setIsActive(!isActive)}
@@ -56,14 +64,22 @@ const Nav = () => {
         </button>
         <ul className="flex flex-col min-w-60 py-28 text-3xl lg:gap-10 gap-4 items-center text-white">
           <li className="cursor-pointer hover:underline">
-            <Link href="#home">Home</Link>
+            <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+              Home
+            </ScrollLink>
           </li>
           <li className="cursor-pointer hover:underline">
-            <Link href="#about">About</Link>
+            <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
+              About
+            </ScrollLink>
           </li>
-          <Frame color="white">
-            <li className="bg-primaryBg text-xl px-4 py-1">Participate Now</li>
-          </Frame>
+          <li>
+            <Frame link={true} color="white">
+              <div className="bg-primaryBg text-xl px-4 py-1">
+                Participate Now
+              </div>
+            </Frame>
+          </li>
         </ul>
       </motion.div>
     </nav>

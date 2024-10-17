@@ -1,15 +1,19 @@
+"use client";
+import Link from "next/link";
 import React, { ReactNode } from "react";
 
 const Frame = ({
   children,
   color = "white",
   strength = 4,
+  link = false,
 }: {
   children: ReactNode;
   color?: string;
   strength?: number;
+  link?: boolean;
 }) => {
-  return (
+  const frameContent = (
     <div
       style={{
         borderColor: color,
@@ -50,6 +54,18 @@ const Frame = ({
       ></div>
       {children}
     </div>
+  );
+
+  return link ? (
+    <Link
+      legacyBehavior
+      href="https://airtable.com/appCAPOMQvpUnbWeb/pag5vZ1xppQFb3rPW/form"
+      passHref
+    >
+      <a>{frameContent}</a>
+    </Link>
+  ) : (
+    frameContent
   );
 };
 

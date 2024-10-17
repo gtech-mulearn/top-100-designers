@@ -5,7 +5,10 @@ import Paragraph from "./animatedText";
 
 const About = () => {
   return (
-    <div className="flex md:justify-center items-center max-xl:items-start max-xl:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center max-lg:p-5">
+    <div
+      id="about"
+      className="flex md:justify-center items-center max-xl:items-start max-xl:flex-col bg-[url('/bg/bg3.webp')] bg-cover bg-center max-lg:p-5"
+    >
       <Image
         className="max-lg:hidden"
         src={"/image2.png"}

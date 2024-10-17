@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import Frame from "./frame";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,11 +15,31 @@ const Footer = () => {
         {" "}
         <span className="text-xl">find us on</span>{" "}
         <span className="flex">
-          <FaDiscord className="text-2xl mx-2" />
-          <FaInstagram className="text-2xl mx-2" />
-          <FaFacebookF className="text-2xl mx-2" />
-          <FaXTwitter className="text-2xl mx-2" />
-          <AiOutlineYoutube className="text-2xl mx-2" />
+          <Link href={""}>
+            <FaDiscord className="text-2xl mx-2" />
+          </Link>
+          <Link
+            href={
+              "https://www.instagram.com/mulearn.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            }
+          >
+            {" "}
+            <FaInstagram className="text-2xl mx-2" />
+          </Link>
+          <Link href={""}>
+            <FaFacebookF className="text-2xl mx-2" />
+          </Link>
+          <Link href={""}>
+            <FaXTwitter className="text-2xl mx-2" />
+          </Link>
+
+          <Link
+            href={
+              "https://www.instagram.com/mulearn.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            }
+          >
+            <AiOutlineYoutube className="text-2xl mx-2" />
+          </Link>
         </span>
       </div>
       <Frame>
